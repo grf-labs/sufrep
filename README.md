@@ -7,7 +7,7 @@ To install this package, run the following commands in R:
 
 ```r
 library(devtools)
-install_github(grf-labs/sufrep)
+install_github("grf-labs/sufrep")
 ```
 
 Example usage:

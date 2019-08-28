@@ -1,0 +1,81 @@
+# AWS keys
+**.pem
+
+# Data files (not to be put online)
+**.csv
+**.tsv
+**.h5
+**.5
+**.json
+
+# Pytest stuff
+**/.pytest_cache/**
+
+# Image files and documentation.
+**.ai
+**.jpg
+**.png
+**.tiff
+**.pdf
+
+
+# Python.
+__pycache__/
+/.venv
+/venv/
+ENV/
+.env
+env/
+dist/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+*.pyc
+docs/build
+docs/source/savefig
+
+
+# Jupyter.
+.ipynb_checkpoints/
+
+
+# Tex files.
+*.log
+*.aux
+*.synctex*
+*.fdb_latexmk
+*.out
+*.toc
+*.fls
+*.bbl
+*.blg
+
+
+# PyCharm.
+.idea/
+scratch/
+
+
+# R projects.
+.R*
+
+
+# Large files.
+**.zip
+
+
+# Metadata files.
+.DS_Store
+
+# Vim-generated files.
+*.swp
+*~
+*.pkl
+
+# Misc
+tmp_*
+*.e[0-9]
+*.o[0-9]
+*_out
+.Rproj.user
