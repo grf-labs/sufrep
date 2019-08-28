@@ -1,0 +1,20 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Related Work}{section.1}% 2
+\BOOKMARK [1][-]{section.2}{Representing Groups with Sufficient Latent State}{}% 3
+\BOOKMARK [1][-]{section.3}{Categorical variable encoding methods}{}% 4
+\BOOKMARK [2][-]{subsection.3.1}{Means encoding}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Low-rank encodings}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.3}{Encoding by multinomial logistic regression coefficients}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Experiments}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Simulations}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Simulation Results}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Empirical Applications}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.4}{Empirical Results}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 13
+\BOOKMARK [1][-]{section.6}{Appendix}{}% 14
+\BOOKMARK [2][-]{subsection.6.1}{Proofs}{section.6}% 15
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Proof of Lemma 1}{subsection.6.1}% 16
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Proof of Lemma 2}{subsection.6.1}% 17
+\BOOKMARK [3][-]{subsubsection.6.1.3}{Proof of Lemma 3}{subsection.6.1}% 18
+\BOOKMARK [3][-]{subsubsection.6.1.4}{Proof of Lemma 4}{subsection.6.1}% 19
+\BOOKMARK [2][-]{subsection.6.2}{Additional Encoding Methods}{section.6}% 20

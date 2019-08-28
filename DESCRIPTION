@@ -1,0 +1,28 @@
+Package: sufrep
+Type: Package
+Title: Sufficient representations for categorical variables
+Version: 0.1.0
+BugReports: https://github.com/grf-labs/sufrep/issues
+Author: Jonathan Johannemann [aut, cre],
+    Vitor Hadad [aut, cre],
+    Stefan Wager [aut],
+    Susan Athey [aut]
+Maintainer: Vitor Hadad <vitorh@stanford.edu>
+Description: Collection of simple methods to represent categorical variables for
+    input to statistical software. This package is currently in beta, and we
+    expect to make continual improvements to its performance and usability.
+    PRs and issue reports are very much welcome.
+Depends:
+    R (>= 3.3.0)
+    glmnet (>= 2.0.16)
+    sparsepca (>= 0.1.12)
+License: GPL-3
+Suggests:
+  grf
+  dplyr
+  xgboost
+  grf
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+URL: https://github.com/grf-labs/sufrep

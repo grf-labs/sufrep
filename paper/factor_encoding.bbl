@@ -1,0 +1,159 @@
+\begin{thebibliography}{27}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Angrist and Pischke(2008)]{angrist2008mostly}
+Joshua~D Angrist and J{\"o}rn-Steffen Pischke.
+\newblock \emph{Mostly harmless econometrics: An empiricist's companion}.
+\newblock Princeton university press, 2008.
+
+\bibitem[Arkhangelsky and Imbens(2018)]{arkhangelsky2018role}
+Dmitry Arkhangelsky and Guido Imbens.
+\newblock The role of the propensity score in fixed effect models.
+\newblock Technical report, National Bureau of Economic Research, 2018.
+
+\bibitem[Biau et~al.(2008)Biau, Devroye, and Lugosi]{biau2008consistency}
+G{\'e}rard Biau, Luc Devroye, and G{\'a}bor Lugosi.
+\newblock Consistency of random forests and other averaging classifiers.
+\newblock \emph{The Journal of Machine Learning Research}, 9:\penalty0
+  2015--2033, 2008.
+
+\bibitem[Bonhomme and Manresa(2015)]{bonhomme2015grouped}
+St{\'e}phane Bonhomme and Elena Manresa.
+\newblock Grouped patterns of heterogeneity in panel data.
+\newblock \emph{Econometrica}, 83\penalty0 (3):\penalty0 1147--1184, 2015.
+
+\bibitem[Breiman(2001)]{breiman2001random}
+Leo Breiman.
+\newblock Random forests.
+\newblock \emph{Machine Learning}, 45\penalty0 (1):\penalty0 5--32, 2001.
+
+\bibitem[Breiman et~al.(1984)Breiman, Friedman, Stone, and
+  Olshen]{breiman1984classification}
+Leo Breiman, Jerome Friedman, Charles~J Stone, and Richard~A Olshen.
+\newblock \emph{Classification and Regression Trees}.
+\newblock CRC press, 1984.
+
+\bibitem[Cerda et~al.(2018)Cerda, Varoquaux, and K{\'e}gl]{cerda2018similarity}
+Patricio Cerda, Ga{\"e}l Varoquaux, and Bal{\'a}zs K{\'e}gl.
+\newblock Similarity encoding for learning with dirty categorical variables.
+\newblock \emph{Machine Learning}, pages 1--18, 2018.
+
+\bibitem[Chen and Guestrin(2016)]{chen2016xgboost}
+Tianqi Chen and Carlos Guestrin.
+\newblock Xgboost: A scalable tree boosting system.
+\newblock In \emph{Proceedings of the 22nd acm sigkdd international conference
+  on knowledge discovery and data mining}, pages 785--794. ACM, 2016.
+
+\bibitem[De~Cock(2011)]{de2011ames}
+Dean De~Cock.
+\newblock Ames, iowa: Alternative to the boston housing data as an end of
+  semester regression project.
+\newblock \emph{Journal of Statistics Education}, 19\penalty0 (3), 2011.
+
+\bibitem[Diggle et~al.(2002)Diggle, Heagerty, Liang, and
+  Zeger]{diggle2002analysis}
+Peter~J Diggle, Patrick~J Heagerty, Kung-Yee Liang, and Scott Zeger.
+\newblock \emph{Analysis of longitudinal data}.
+\newblock Oxford University Press, 2002.
+
+\bibitem[Farag{\'o} and Lugosi(1993)]{farago1993strong}
+Andr{\'a}s Farag{\'o} and G{\'a}bor Lugosi.
+\newblock Strong universal consistency of neural network classifiers.
+\newblock \emph{IEEE Transactions on Information Theory}, 39\penalty0
+  (4):\penalty0 1146--1151, 1993.
+
+\bibitem[Friedman(2001)]{friedman2001greedy}
+Jerome~H Friedman.
+\newblock Greedy function approximation: a gradient boosting machine.
+\newblock \emph{Annals of statistics}, pages 1189--1232, 2001.
+
+\bibitem[harlfoxem(2016)]{houseSalesKingCounty}
+harlfoxem.
+\newblock House sales in king county,usa, 2016.
+\newblock URL \url{https://www.kaggle.com/harlfoxem/housesalesprediction/}.
+
+\bibitem[Harrison and Rubinfeld(1978)]{harrison1978hedonic}
+David Harrison, Jr and Daniel~L Rubinfeld.
+\newblock Hedonic housing prices and the demand for clean air.
+\newblock \emph{Journal of Environmental Economics and Management}, 5\penalty0
+  (1):\penalty0 81--102, 1978.
+
+\bibitem[Hastie et~al.(2009)Hastie, Tibshirani, and
+  Friedman]{hastie2009elements}
+Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
+\newblock \emph{The Elements of Statistical Learning}.
+\newblock New York: Springer, 2009.
+
+\bibitem[Hastie et~al.(2015)Hastie, Tibshirani, and
+  Wainwright]{hastie2015statistical}
+Trevor Hastie, Robert Tibshirani, and Martin Wainwright.
+\newblock \emph{Statistical Learning with Sparsity: The Lasso and
+  Generalizations}.
+\newblock CRC Press, 2015.
+
+\bibitem[Hemani(2017)]{pakistanEducation}
+Mesum~Raza Hemani.
+\newblock Pakistan education performance dataset, 2017.
+\newblock URL
+  \url{https://www.kaggle.com/mesumraza/pakistan-education-performance-dataset/}.
+
+\bibitem[Mikolov et~al.(2013)Mikolov, Chen, Corrado, and
+  Dean]{mikolov2013efficient}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock Efficient estimation of word representations in vector space.
+\newblock In \emph{International Conference on Learning Representations}, 2013.
+
+\bibitem[Murphy(2012)]{murphy2012machine}
+Kevin Murphy.
+\newblock Machine learning, a probabilistic perspective, 2012.
+
+\bibitem[Neyman and Scott(1948)]{neyman1948consistent}
+Jerzy Neyman and Elizabeth~L Scott.
+\newblock Consistent estimates based on partially consistent observations.
+\newblock \emph{Econometrica: Journal of the Econometric Society}, pages 1--32,
+  1948.
+
+\bibitem[Pennington et~al.(2014)Pennington, Socher, and
+  Manning]{pennington2014glove}
+Jeffrey Pennington, Richard Socher, and Christopher Manning.
+\newblock Glove: Global vectors for word representation.
+\newblock In \emph{Proceedings of the 2014 conference on empirical methods in
+  natural language processing (EMNLP)}, pages 1532--1543, 2014.
+
+\bibitem[Rahimi and Recht(2008)]{rahimi2008random}
+Ali Rahimi and Benjamin Recht.
+\newblock Random features for large-scale kernel machines.
+\newblock In \emph{Advances in neural information processing systems}, pages
+  1177--1184, 2008.
+
+\bibitem[Stone(1977)]{stone1977consistent}
+Charles~J Stone.
+\newblock Consistent nonparametric regression.
+\newblock \emph{The Annals of Statistics}, pages 595--620, 1977.
+
+\bibitem[Venables(2016)]{venables2016codingmatrices}
+WN~Venables.
+\newblock codingmatrices: Alternative factor coding matrices for linear model
+  formulae [software], 2016.
+
+\bibitem[Wang and Blei(2019)]{wang2019lessings}
+Yixin Wang and David~M Blei.
+\newblock The blessings of multiple causes.
+\newblock \emph{arXiv preprint arXiv:1805.06826}, 2019.
+
+\bibitem[Wooldridge(2010)]{wooldridge2010econometric}
+Jeffrey~M Wooldridge.
+\newblock \emph{Econometric analysis of cross section and panel data}.
+\newblock MIT press, 2010.
+
+\bibitem[Zou et~al.(2006)Zou, Hastie, and Tibshirani]{zou2006sparse}
+Hui Zou, Trevor Hastie, and Robert Tibshirani.
+\newblock Sparse principal component analysis.
+\newblock \emph{Journal of computational and graphical statistics}, pages
+  265--286, 2006.
+
+\end{thebibliography}
