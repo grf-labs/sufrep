@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -14,6 +14,19 @@ Joshua~D Angrist and J{\"o}rn-Steffen Pischke.
 Dmitry Arkhangelsky and Guido Imbens.
 \newblock The role of the propensity score in fixed effect models.
 \newblock Technical report, National Bureau of Economic Research, 2018.
+
+\bibitem[Athey et~al.(2018)Athey, Imbens, and Wager]{athey2016approximate}
+Susan Athey, Guido~W Imbens, and Stefan Wager.
+\newblock Approximate residual balancing: debiased inference of average
+  treatment effects in high dimensions.
+\newblock \emph{Journal of the Royal Statistical Society: Series B (Statistical
+  Methodology)}, 80\penalty0 (4):\penalty0 597--623, 2018.
+
+\bibitem[Athey et~al.(2019)Athey, Tibshirani, and Wager]{athey2018generalized}
+Susan Athey, Julie Tibshirani, and Stefan Wager.
+\newblock Generalized random forests.
+\newblock \emph{The Annals of Statistics}, 47\penalty0 (2):\penalty0
+  1148--1178, 2019.
 
 \bibitem[Biau et~al.(2008)Biau, Devroye, and Lugosi]{biau2008consistency}
 G{\'e}rard Biau, Luc Devroye, and G{\'a}bor Lugosi.
@@ -48,6 +61,15 @@ Tianqi Chen and Carlos Guestrin.
 \newblock In \emph{Proceedings of the 22nd acm sigkdd international conference
   on knowledge discovery and data mining}, pages 785--794. ACM, 2016.
 
+\bibitem[Chernozhukov et~al.(2018)Chernozhukov, Chetverikov, Demirer, Duflo,
+  Hansen, Newey, and Robins]{chernozhukov2016double}
+Victor Chernozhukov, Denis Chetverikov, Mert Demirer, Esther Duflo, Christian
+  Hansen, Whitney Newey, and James Robins.
+\newblock Double/debiased machine learning for treatment and structural
+  parameters.
+\newblock \emph{The Econometrics Journal}, 21\penalty0 (1):\penalty0 C1--C68,
+  2018.
+
 \bibitem[De~Cock(2011)]{de2011ames}
 Dean De~Cock.
 \newblock Ames, iowa: Alternative to the boston housing data as an end of
@@ -69,7 +91,15 @@ Andr{\'a}s Farag{\'o} and G{\'a}bor Lugosi.
 \bibitem[Friedman(2001)]{friedman2001greedy}
 Jerome~H Friedman.
 \newblock Greedy function approximation: a gradient boosting machine.
-\newblock \emph{Annals of statistics}, pages 1189--1232, 2001.
+\newblock \emph{Annals of Statistics}, pages 1189--1232, 2001.
+
+\bibitem[Gruber and {van der Laan}(2012)]{tmle}
+Susan Gruber and Mark~J. {van der Laan}.
+\newblock {tmle}: An {R} package for targeted maximum likelihood estimation.
+\newblock \emph{Journal of Statistical Software}, 51\penalty0 (13):\penalty0
+  1--35, 2012.
+\newblock URL \url{http://www.jstatsoft.org/v51/i13/}.
+\newblock doi:10.18637/jss.v051.i13.
 
 \bibitem[harlfoxem(2016)]{houseSalesKingCounty}
 harlfoxem.
@@ -101,6 +131,12 @@ Mesum~Raza Hemani.
 \newblock URL
   \url{https://www.kaggle.com/mesumraza/pakistan-education-performance-dataset/}.
 
+\bibitem[Imbens and Rubin(2015)]{imbens2015causal}
+Guido~W Imbens and Donald~B Rubin.
+\newblock \emph{Causal Inference in Statistics, Social, and Biomedical
+  Sciences}.
+\newblock Cambridge University Press, 2015.
+
 \bibitem[Mikolov et~al.(2013)Mikolov, Chen, Corrado, and
   Dean]{mikolov2013efficient}
 Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
@@ -124,26 +160,46 @@ Jeffrey Pennington, Richard Socher, and Christopher Manning.
 \newblock In \emph{Proceedings of the 2014 conference on empirical methods in
   natural language processing (EMNLP)}, pages 1532--1543, 2014.
 
+\bibitem[{R Core Team}(2019)]{CRAN}
+{R Core Team}.
+\newblock \emph{R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2019.
+\newblock URL \url{https://www.R-project.org/}.
+
 \bibitem[Rahimi and Recht(2008)]{rahimi2008random}
 Ali Rahimi and Benjamin Recht.
 \newblock Random features for large-scale kernel machines.
 \newblock In \emph{Advances in neural information processing systems}, pages
   1177--1184, 2008.
 
+\bibitem[Robins et~al.(1994)Robins, Rotnitzky, and Zhao]{robins1994estimation}
+James~M Robins, Andrea Rotnitzky, and Lue~Ping Zhao.
+\newblock Estimation of regression coefficients when some regressors are not
+  always observed.
+\newblock \emph{Journal of the American statistical Association}, 89\penalty0
+  (427):\penalty0 846--866, 1994.
+
+\bibitem[Rosenbaum and Rubin(1983)]{rosenbaum1983central}
+Paul~R Rosenbaum and Donald~B Rubin.
+\newblock The central role of the propensity score in observational studies for
+  causal effects.
+\newblock \emph{Biometrika}, 70\penalty0 (1):\penalty0 41--55, 1983.
+
 \bibitem[Stone(1977)]{stone1977consistent}
 Charles~J Stone.
 \newblock Consistent nonparametric regression.
 \newblock \emph{The Annals of Statistics}, pages 595--620, 1977.
 
+\bibitem[van~der Laan and Rose(2011)]{van2011targeted}
+Mark~J van~der Laan and Sherri Rose.
+\newblock \emph{Targeted Learning: Causal Inference for Observational and
+  Experimental Data}.
+\newblock Springer Science \& Business Media, 2011.
+
 \bibitem[Venables(2016)]{venables2016codingmatrices}
 WN~Venables.
 \newblock codingmatrices: Alternative factor coding matrices for linear model
   formulae [software], 2016.
-
-\bibitem[Wang and Blei(2019)]{wang2019lessings}
-Yixin Wang and David~M Blei.
-\newblock The blessings of multiple causes.
-\newblock \emph{arXiv preprint arXiv:1805.06826}, 2019.
 
 \bibitem[Wooldridge(2010)]{wooldridge2010econometric}
 Jeffrey~M Wooldridge.

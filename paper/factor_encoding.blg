@@ -1,12 +1,12 @@
-This is BibTeX, Version 0.99d (TeX Live 2018)
+This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: factor_encoding.aux
 The style file: plainnat.bst
 Database file #1: references.bib
 Warning--entry type for "pakistanEducation" isn't style-file defined
---line 5715 of file references.bib
+--line 2879 of file references.bib
 Warning--entry type for "houseSalesKingCounty" isn't style-file defined
---line 5731 of file references.bib
+--line 2887 of file references.bib
 Name 1 in "Zou, Hui, and Trevor Hastie, and Robert Tibshirani" has a comma at the end for entry zou2006sparse
 while executing---line 1347 of file plainnat.bst
 Name 1 in "Zou, Hui, and Trevor Hastie, and Robert Tibshirani" has a comma at the end for entry zou2006sparse
@@ -21,45 +21,45 @@ Name 1 in "Zou, Hui, and Trevor Hastie, and Robert Tibshirani" has a comma at th
 while executing---line 1429 of file plainnat.bst
 Name 2 in "Zou, Hui, and Trevor Hastie, and Robert Tibshirani" has a comma at the end for entry zou2006sparse
 while executing---line 1429 of file plainnat.bst
-You've used 27 entries,
+You've used 35 entries,
             2773 wiz_defined-function locations,
-            747 strings with 8950 characters,
-and the built_in function-call counts, 11807 in all, are:
-= -- 1062
-> -- 576
-< -- 26
-+ -- 198
-- -- 171
-* -- 828
-:= -- 1758
-add.period$ -- 80
-call.type$ -- 27
-change.case$ -- 133
-chr.to.int$ -- 27
-cite$ -- 54
-duplicate$ -- 604
-empty$ -- 1038
-format.name$ -- 216
-if$ -- 2545
+            802 strings with 10593 characters,
+and the built_in function-call counts, 15577 in all, are:
+= -- 1401
+> -- 805
+< -- 30
++ -- 275
+- -- 240
+* -- 1157
+:= -- 2345
+add.period$ -- 107
+call.type$ -- 35
+change.case$ -- 177
+chr.to.int$ -- 35
+cite$ -- 70
+duplicate$ -- 766
+empty$ -- 1337
+format.name$ -- 299
+if$ -- 3320
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 28
-newline$ -- 141
-num.names$ -- 108
-pop$ -- 315
+missing$ -- 37
+newline$ -- 184
+num.names$ -- 140
+pop$ -- 399
 preamble$ -- 1
-purify$ -- 111
+purify$ -- 150
 quote$ -- 0
-skip$ -- 491
+skip$ -- 612
 stack$ -- 0
-substring$ -- 435
-swap$ -- 100
+substring$ -- 589
+swap$ -- 109
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 267
+type$ -- 345
 warning$ -- 0
-while$ -- 114
+while$ -- 150
 width$ -- 0
-write$ -- 343
+write$ -- 452
 (There were 7 error messages)

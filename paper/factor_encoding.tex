@@ -155,6 +155,18 @@ characteristics, e.g., severity of disease or socioeconomic resources, that both
 patient to self-select into different hospitals. Our main result is that, under this sufficient latent state
 assumption, practical representations of the form \eqref{eq:repr} exist and can be learned from data.
 
+One important application area where regression problems of the form \eqref{eq:mu} are common arises in causal inference,
+when we want to measure the effect of a treatment on an outcome of interest while controlling
+for measured confounders \citep{imbens2015causal,rosenbaum1983central}. In such applications, it is
+common to have a mix of continuous confounders (e.g., age, income, etc.) and high-cardinality categorical
+ones (e.g., zip code, hospital, etc.). Given this type of data, modern approaches to causal inference start
+by solving a series of non-parametric regression problems of the form \eqref{eq:mu} and then synthetize
+them into a doubly robust treatment effect estimator; see \citet{athey2016approximate}, \citet{chernozhukov2016double},
+\citet{robins1994estimation}, \citet{van2011targeted} and references therein. Software packages built around
+this idea include \texttt{tmle} \citep{tmle} and \texttt{grf} \citep{athey2018generalized} for \texttt{R} \citep{CRAN}.
+As discussed further in Section \ref{sec:DR}, we expect our approach to predictive modeling with high-cardinality
+categorical variables to be particularly useful in the context of doubly robust treatment effect estimation.
+
 Our paper is structured as follows. We begin by reviewing similar problem settings in the fixed effects literature and the drawbacks of using existing methods in \ref{subsec:related_work}. In Section 2, we introduce the primary lemma which seeks to describe the true information we wish to extract from categorical variables. In Section 3, we expand on lemma 1 to develop methods that utilize this insight. In Sections 4 and 5, we run simulated and observational experiments with our proposed methods and follow up with discussion on how realized performance compared to our expectations.
 
 
@@ -163,8 +175,12 @@ Our paper is structured as follows. We begin by reviewing similar problem settin
 
 The principle of representing high-cardinality categorical variables as real-valued vectors has played an important role in many different areas. For example, in econometrics the categories often represent groups the individual observations belong to (such as classroom cohorts or a region of the country) or are identified by (such as the individual identifier in longitudinal data).
 
-In the literature on panel data analysis, the approach we propose here is perhaps most closely related to the one presented in \citet{bonhomme2015grouped} where individual time series belong to discrete clusters and we have only one fixed effect per cluster (rather than one per time series). \citet{bonhomme2015grouped} then fit this model via a $k$-means like algorithm that alternates clustering and estimation with per-cluster fixed
-effects.\footnote{Our approach is not directly comparable to either of these methods, as we do not focus on textual data, and do not assume that the latent state $L_i$ can be consistently estimated (in contrast, \citet{bonhomme2015grouped} assume that they have access to long enough time series that their clustering step is consistent which, in our setting, would be equivalent to assuming that $L_i$ can be recovered).} Furthermore, \cite{arkhangelsky2018role} deal with misspecification using a propensity score-weighted estimator that uses nonlinear modeling and adjusts for group differences via group sufficient statistics. The combination of flexible conditional mean modeling and balancing methods yields a doubly-robust estimator of the treatment effect.
+Our work was originally motivated by a result of \citet{arkhangelsky2018role}, who showed that in many settings
+where we want to control for a mix of categorical and continuous confounders $X_i$ and $G_i$ respectively, we don't need to explicitly control
+for the categorical variable---and it's enough to control for the distribution of the continuous confounders across
+samples in each category. Furthermore, if the distribution $X_i \cond G_i$ follows an exponential family, it's enough
+to control for $\mu_{G_i}$, where $\mu_g = \EE{X_i \cond G_i = g}$. In a sense, the results of this paper can be
+seen as an application of the ideas of \citet{arkhangelsky2018role} to the problem of generic predictive modeling.
 
 In natural language processing, it is common
 to start more complex analyses with a pre-processing step that represent words as vectors that capture
@@ -175,8 +191,12 @@ propose using a low-dimensional embedding that exploits lexicographic similarity
 similar spellings are arranged close to each other). In this paper, we use information in the $X_i$,
 rather than lexicographic information, to construct an embedding; however, the high-level conclusion
 that we can achieve meaningful gains by using auxiliary information to embed categorical variables in
-a low-rank space remains. Also, \citep{rahimi2008random} proposes randomly projecting a one-hot
+a low-rank space remains. Also, \citet{rahimi2008random} proposes randomly projecting a one-hot
 representation of the categorical variables into $\RR^k$ for relatively small $k$.
+
+Meanwhile, in the literature on panel data analysis, the approach we propose here is perhaps most closely related to the one presented in \citet{bonhomme2015grouped} where individual time series belong to discrete clusters and we have only one fixed effect per cluster (rather than one per time series). \citet{bonhomme2015grouped} then fit this model via a $k$-means like algorithm that alternates clustering and estimation with per-cluster fixed
+effects. Our approach is not directly comparable to either of these methods, as we do not focus on textual data, and do not assume that the latent state $L_i$ can be consistently estimated (in contrast, \citet{bonhomme2015grouped} assume that they have access to long enough time series that their clustering step is consistent which, in our setting, would be equivalent to assuming that $L_i$ can be recovered).
+
 
 
 In the broader machine learning literature, the discussion of how to best account for group membership $G_i$ in a non-parametric regression
@@ -595,7 +615,7 @@ The Ames Housing Dataset has $n=2,930$ individual home sales in Ames, Iowa from 
 
 \paragraph{King County House Sales}
 
-The King County House Sales Dataset from \cite{houseSalesKingCounty} is a data set containing the record of 21,613 home sales in King County, Washington between May 2014 to May 2015. The author does not provide much additional information aside from it being a good dataset to test regression models. The dataset is relatively popular with over 169,000 views and 28,000 downloads at the time of this paper.
+The King County House Sales Dataset \citep{houseSalesKingCounty} is a data set containing the record of 21,613 home sales in King County, Washington between May 2014 to May 2015. The author does not provide much additional information aside from it being a good dataset to test regression models. The dataset is relatively popular with over 169,000 views and 28,000 downloads at the time of this paper.
 
 The data itself came with 21 covariates including the sale price of the house. We treat the ``zipcode'' covariate, which has $|\gcal|=70$, as the categorical variable.
 
@@ -659,7 +679,10 @@ For regression forests, on average, it looks like low rank approaches to generat
 	\label{tab:observational_xgb}
 \end{table}
 
+\section{Application to Doubly Robust Treatment Effect Estimation}
+\label{sec:DR}
 
+TODO. We should define the problem with potential outcomes + unconfoundedness; define the DR estimator and briefly summarize its key properties; talk about how our approach to categorical variables fits in; run a simulation + report results.
 
 % ----------- CONCLUSION --------------
 \section{Conclusion}
@@ -668,7 +691,8 @@ In this paper, we explore the task of mapping high-cardinality categorical varia
 
 
 
-
+\bibliography{references}
+\bibliographystyle{plainnat}
 
 
 
@@ -938,8 +962,7 @@ For a more in-depth treatment, see \cite{venables2016codingmatrices}. Note that 
 
 For the following five methods, we use information about the continuous covariates to construct the mapping $\psi$.
 
-\bibliography{references}
-\bibliographystyle{plainnat}
+
 
 
 

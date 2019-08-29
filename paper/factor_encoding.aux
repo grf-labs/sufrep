@@ -18,22 +18,33 @@
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \citation{angrist2008mostly,diggle2002analysis,wooldridge2010econometric}
 \citation{neyman1948consistent}
-\babel@aux{english}{}
+\select@language{english}
+\@writefile{toc}{\select@language{english}}
+\@writefile{lof}{\select@language{english}}
+\@writefile{lot}{\select@language{english}}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
 \newlabel{eq:mu}{{1}{1}{Introduction}{equation.1.1}{}}
 \newlabel{eq:FE}{{2}{1}{Introduction}{equation.1.2}{}}
+\citation{imbens2015causal,rosenbaum1983central}
+\citation{athey2016approximate}
+\citation{chernozhukov2016double}
+\citation{robins1994estimation}
+\citation{van2011targeted}
+\citation{tmle}
+\citation{athey2018generalized}
+\citation{CRAN}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Causal graph depicting the key assumption that $Y_i$ and $X_i$ are independent of group membership $G_i$ conditionally on latent state $L_i$. The grayed-out nodes are observed.\relax }}{2}{figure.caption.1}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:graph_simple}{{1}{2}{Causal graph depicting the key assumption that $Y_i$ and $X_i$ are independent of group membership $G_i$ conditionally on latent state $L_i$. The grayed-out nodes are observed.\relax }{figure.caption.1}{}}
 \newlabel{eq:repr}{{3}{2}{Introduction}{equation.1.3}{}}
-\citation{bonhomme2015grouped}
-\citation{bonhomme2015grouped}
-\citation{bonhomme2015grouped}
 \citation{arkhangelsky2018role}
-\citation{wang2019lessings}
+\citation{arkhangelsky2018role}
 \citation{mikolov2013efficient,pennington2014glove}
 \citation{cerda2018similarity}
 \citation{rahimi2008random}
+\citation{bonhomme2015grouped}
+\citation{bonhomme2015grouped}
+\citation{bonhomme2015grouped}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Related Work}{3}{subsection.1.1}}
 \newlabel{subsec:related_work}{{1.1}{3}{Related Work}{subsection.1.1}{}}
 \citation{hastie2015statistical}
@@ -42,142 +53,152 @@
 \citation{friedman2001greedy}
 \citation{breiman1984classification}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Representing Groups with Sufficient Latent State}{4}{section.2}}
-\newlabel{lemm:repr}{{1}{4}{}{prop.1}{}}
-\newlabel{eq:psi}{{4}{4}{}{equation.2.4}{}}
-\newlabel{eq:explicit}{{5}{4}{}{equation.2.5}{}}
 \citation{stone1977consistent}
 \citation{biau2008consistency}
 \citation{farago1993strong}
+\newlabel{lemm:repr}{{1}{5}{}{prop.1}{}}
+\newlabel{eq:psi}{{4}{5}{}{equation.2.4}{}}
+\newlabel{eq:explicit}{{5}{5}{}{equation.2.5}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Categorical variable encoding methods}{5}{section.3}}
 \newlabel{sec:categorical_encoding}{{3}{5}{Categorical variable encoding methods}{section.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Means encoding}{5}{subsection.3.1}}
-\newlabel{subsec:means}{{3.1}{5}{Means encoding}{subsection.3.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Implementation example of the \emph  {means} encoding.\footnotemark \relax }}{5}{figure.caption.2}}
-\newlabel{fig:means_encoding}{{2}{5}{Implementation example of the \emph {means} encoding.\protect \footnotemark \relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Means encoding}{6}{subsection.3.1}}
+\newlabel{subsec:means}{{3.1}{6}{Means encoding}{subsection.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Implementation example of the \emph  {means} encoding.\footnotemark \relax }}{6}{figure.caption.2}}
+\newlabel{fig:means_encoding}{{2}{6}{Implementation example of the \emph {means} encoding.\protect \footnotemark \relax }{figure.caption.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Intution for the \emph  {means} encoding on illustrative data. Here, categories $(A,B)$ and $(C,D)$ are associated with separate latent groups.\relax }}{6}{figure.caption.3}}
 \newlabel{fig:means_intuition}{{3}{6}{Intution for the \emph {means} encoding on illustrative data. Here, categories $(A,B)$ and $(C,D)$ are associated with separate latent groups.\relax }{figure.caption.3}{}}
-\newlabel{lemm:means}{{2}{6}{}{prop.2}{}}
-\newlabel{eq:explicit_mom}{{6}{6}{}{equation.3.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Low-rank encodings}{6}{subsection.3.2}}
-\newlabel{subsec:lowrank}{{3.2}{6}{Low-rank encodings}{subsection.3.2}{}}
 \citation{zou2006sparse}
 \citation{zou2006sparse}
 \citation{breiman2001random}
 \citation{chen2016xgboost}
-\newlabel{alg:means}{{\caption@xref {alg:means}{ on input line 297}}{7}{Means encoding}{equation.3.6}{}}
+\newlabel{lemm:means}{{2}{7}{}{prop.2}{}}
+\newlabel{eq:explicit_mom}{{6}{7}{}{equation.3.6}{}}
+\newlabel{alg:means}{{\caption@xref {alg:means}{ on input line 318}}{7}{Means encoding}{equation.3.6}{}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Means Encoding Method\relax }}{7}{algorithm.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Low-rank encodings}{7}{subsection.3.2}}
+\newlabel{subsec:lowrank}{{3.2}{7}{Low-rank encodings}{subsection.3.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Implementation example of the \emph  {low-rank} encoding with singular value decomposition. Alternatively, we could also have used sparse PCA in place of SVD.\relax }}{7}{figure.caption.4}}
 \newlabel{fig:lowrank_encoding}{{4}{7}{Implementation example of the \emph {low-rank} encoding with singular value decomposition. Alternatively, we could also have used sparse PCA in place of SVD.\relax }{figure.caption.4}{}}
-\newlabel{eq:sparse_pca}{{8}{7}{}{equation.3.8}{}}
 \newlabel{lemm:lowrank}{{3}{8}{}{prop.3}{}}
 \newlabel{eq:lowrank}{{9}{8}{}{equation.3.9}{}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Low Rank Encoding Method\relax }}{8}{algorithm.2}}
 \newlabel{alg:lowrankmethod}{{2}{8}{Low Rank Encoding Method\relax }{algorithm.2}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Sparse Low Rank Encoding Method\relax }}{8}{algorithm.3}}
-\newlabel{alg:sparselowrankmethod}{{3}{8}{Sparse Low Rank Encoding Method\relax }{algorithm.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Encoding by multinomial logistic regression coefficients}{8}{subsection.3.3}}
-\newlabel{subsec:mnl}{{3.3}{8}{Encoding by multinomial logistic regression coefficients}{subsection.3.3}{}}
-\newlabel{eq:mnl}{{10}{8}{Encoding by multinomial logistic regression coefficients}{equation.3.10}{}}
+\newlabel{eq:sparse_pca}{{8}{8}{}{equation.3.8}{}}
 \citation{mikolov2013efficient}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Sparse Low Rank Encoding Method\relax }}{9}{algorithm.3}}
+\newlabel{alg:sparselowrankmethod}{{3}{9}{Sparse Low Rank Encoding Method\relax }{algorithm.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Encoding by multinomial logistic regression coefficients}{9}{subsection.3.3}}
+\newlabel{subsec:mnl}{{3.3}{9}{Encoding by multinomial logistic regression coefficients}{subsection.3.3}{}}
+\newlabel{eq:mnl}{{10}{9}{Encoding by multinomial logistic regression coefficients}{equation.3.10}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Implementation example of the \emph  {mnl} encoding.\relax }}{9}{figure.caption.5}}
 \newlabel{fig:mnl_encoding}{{5}{9}{Implementation example of the \emph {mnl} encoding.\relax }{figure.caption.5}{}}
-\newlabel{lemm:mnl}{{4}{9}{}{prop.4}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Multinomial logistic regression method (MNL)\relax }}{9}{algorithm.4}}
-\newlabel{alg:mnl}{{4}{9}{Multinomial logistic regression method (MNL)\relax }{algorithm.4}{}}
+\newlabel{lemm:mnl}{{4}{10}{}{prop.4}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Multinomial logistic regression method (MNL)\relax }}{10}{algorithm.4}}
+\newlabel{alg:mnl}{{4}{10}{Multinomial logistic regression method (MNL)\relax }{algorithm.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{10}{section.4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Simulations}{10}{subsection.4.1}}
 \newlabel{sec:simulations}{{4.1}{10}{Simulations}{subsection.4.1}{}}
 \@writefile{toc}{\contentsline {paragraph}{Latent groups, observable groups and continuous covariates}{10}{section*.6}}
 \newlabel{eq:latent_groups}{{13}{10}{Latent groups, observable groups and continuous covariates}{equation.4.13}{}}
-\@writefile{toc}{\contentsline {paragraph}{Outcomes}{10}{section*.7}}
-\newlabel{eq:linear_outcome}{{16}{10}{Outcomes}{equation.4.16}{}}
-\newlabel{eq:intercept}{{17}{10}{Outcomes}{equation.4.17}{}}
-\newlabel{eq:slopes}{{18}{10}{Outcomes}{equation.4.18}{}}
+\@writefile{toc}{\contentsline {paragraph}{Outcomes}{11}{section*.7}}
+\newlabel{eq:linear_outcome}{{16}{11}{Outcomes}{equation.4.16}{}}
+\newlabel{eq:intercept}{{17}{11}{Outcomes}{equation.4.17}{}}
+\newlabel{eq:slopes}{{18}{11}{Outcomes}{equation.4.18}{}}
 \newlabel{eq:latent_outcome}{{20}{11}{Outcomes}{equation.4.20}{}}
 \newlabel{eq:latentslopes}{{21}{11}{Outcomes}{equation.4.21}{}}
 \newlabel{eq:nonlinear_outcome}{{22}{11}{Outcomes}{equation.4.22}{}}
 \newlabel{eq:nonlinearslopes}{{23}{11}{Outcomes}{equation.4.23}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Simulation Results}{11}{subsection.4.2}}
-\newlabel{sec:simulation_results}{{4.2}{11}{Simulation Results}{subsection.4.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Percent Improvement over One Hot Encoding for Regression Forests.\relax }}{11}{figure.caption.8}}
-\newlabel{tab:rf_sim_setups}{{6}{11}{Percent Improvement over One Hot Encoding for Regression Forests.\relax }{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Percent Improvement over One Hot Encoding for xgboost.\relax }}{12}{figure.caption.9}}
-\newlabel{tab:xgb_sim_setups}{{7}{12}{Percent Improvement over One Hot Encoding for xgboost.\relax }{figure.caption.9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Empirical Applications}{12}{subsection.4.3}}
-\newlabel{sec:empirical_applications}{{4.3}{12}{Empirical Applications}{subsection.4.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Percent Improvement over One Hot Encoding for Regression Forests.\relax }}{12}{figure.caption.8}}
+\newlabel{tab:rf_sim_setups}{{6}{12}{Percent Improvement over One Hot Encoding for Regression Forests.\relax }{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Simulation Results}{12}{subsection.4.2}}
+\newlabel{sec:simulation_results}{{4.2}{12}{Simulation Results}{subsection.4.2}{}}
 \citation{pakistanEducation}
 \citation{de2011ames}
 \citation{harrison1978hedonic}
 \citation{houseSalesKingCounty}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Percent Improvement over One Hot Encoding for xgboost.\relax }}{13}{figure.caption.9}}
+\newlabel{tab:xgb_sim_setups}{{7}{13}{Percent Improvement over One Hot Encoding for xgboost.\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Empirical Applications}{13}{subsection.4.3}}
+\newlabel{sec:empirical_applications}{{4.3}{13}{Empirical Applications}{subsection.4.3}{}}
 \@writefile{toc}{\contentsline {paragraph}{Pakistan Educational Performance}{13}{section*.10}}
 \@writefile{toc}{\contentsline {paragraph}{Ames Housing}{13}{section*.11}}
-\@writefile{toc}{\contentsline {paragraph}{King County House Sales}{13}{section*.12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Empirical Results}{13}{subsection.4.4}}
+\@writefile{toc}{\contentsline {paragraph}{King County House Sales}{14}{section*.12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Empirical Results}{14}{subsection.4.4}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Observational Dataset Results for Regression Forests.\relax }}{14}{table.caption.13}}
 \newlabel{tab:observational_rf}{{1}{14}{Observational Dataset Results for Regression Forests.\relax }{table.caption.13}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Observational Dataset Results for XGBoost.\relax }}{14}{table.caption.14}}
-\newlabel{tab:observational_xgb}{{2}{14}{Observational Dataset Results for XGBoost.\relax }{table.caption.14}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{14}{section.5}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Appendix}{15}{section.6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Proofs}{15}{subsection.6.1}}
-\@writefile{toc}{\contentsline {paragraph}{Definitions}{15}{section*.15}}
-\newlabel{eq:matrix_omega}{{24}{15}{Definitions}{equation.6.24}{}}
-\newlabel{eq:matrix_a}{{25}{15}{Definitions}{equation.6.25}{}}
-\newlabel{eq:matrix_psi}{{26}{15}{Definitions}{equation.6.26}{}}
-\@writefile{toc}{\contentsline {paragraph}{Overview}{15}{section*.16}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.1}Proof of Lemma \ref  {lemm:repr}}{15}{subsubsection.6.1.1}}
-\newlabel{proof:suff}{{6.1.1}{15}{Proof of Lemma \ref {lemm:repr}}{subsubsection.6.1.1}{}}
-\newlabel{eq:mu2}{{27}{15}{Proof of Lemma \ref {lemm:repr}}{equation.6.27}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.2}Proof of Lemma \ref  {lemm:means}}{16}{subsubsection.6.1.2}}
-\newlabel{proof:means}{{6.1.2}{16}{Proof of Lemma \ref {lemm:means}}{subsubsection.6.1.2}{}}
-\newlabel{eq:scalar_decomposition}{{31}{16}{Proof of Lemma \ref {lemm:means}}{equation.6.31}{}}
-\newlabel{eq:matrix_decomposition}{{32}{16}{Proof of Lemma \ref {lemm:means}}{equation.6.32}{}}
-\newlabel{eq:omega_inverse}{{33}{16}{Proof of Lemma \ref {lemm:means}}{equation.6.33}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.3}Proof of Lemma \ref  {lemm:lowrank}}{16}{subsubsection.6.1.3}}
-\newlabel{proof:lowrank}{{6.1.3}{16}{Proof of Lemma \ref {lemm:lowrank}}{subsubsection.6.1.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.1.4}Proof of Lemma \ref  {lemm:mnl}}{16}{subsubsection.6.1.4}}
-\newlabel{proof:mnl}{{6.1.4}{16}{Proof of Lemma \ref {lemm:mnl}}{subsubsection.6.1.4}{}}
-\newlabel{eq:mnl_bayes}{{36}{16}{Proof of Lemma \ref {lemm:mnl}}{equation.6.36}{}}
-\newlabel{eq:mnl_logit}{{38}{16}{Proof of Lemma \ref {lemm:mnl}}{equation.6.38}{}}
-\citation{venables2016codingmatrices}
-\citation{murphy2012machine}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Additional Encoding Methods}{17}{subsection.6.2}}
-\newlabel{app:encodings}{{6.2}{17}{Additional Encoding Methods}{subsection.6.2}{}}
-\@writefile{toc}{\contentsline {paragraph}{One-hot or dummy}{17}{section*.17}}
-\@writefile{toc}{\contentsline {paragraph}{Deviation}{17}{section*.19}}
-\@writefile{toc}{\contentsline {paragraph}{Difference}{17}{section*.21}}
-\@writefile{toc}{\contentsline {paragraph}{Helmert}{18}{section*.23}}
-\@writefile{toc}{\contentsline {paragraph}{Repeated Effect}{18}{section*.25}}
-\@writefile{toc}{\contentsline {paragraph}{Permutation}{18}{section*.27}}
-\@writefile{toc}{\contentsline {paragraph}{Multi-Permutation (Multi-Perm)}{18}{section*.29}}
-\citation{hastie2009elements}
 \bibdata{references}
 \bibcite{angrist2008mostly}{{1}{2008}{{Angrist and Pischke}}{{}}}
 \bibcite{arkhangelsky2018role}{{2}{2018}{{Arkhangelsky and Imbens}}{{}}}
-\bibcite{biau2008consistency}{{3}{2008}{{Biau et~al.}}{{Biau, Devroye, and Lugosi}}}
-\bibcite{bonhomme2015grouped}{{4}{2015}{{Bonhomme and Manresa}}{{}}}
-\bibcite{breiman2001random}{{5}{2001}{{Breiman}}{{}}}
-\bibcite{breiman1984classification}{{6}{1984}{{Breiman et~al.}}{{Breiman, Friedman, Stone, and Olshen}}}
-\bibcite{cerda2018similarity}{{7}{2018}{{Cerda et~al.}}{{Cerda, Varoquaux, and K{\'e}gl}}}
-\bibcite{chen2016xgboost}{{8}{2016}{{Chen and Guestrin}}{{}}}
-\bibcite{de2011ames}{{9}{2011}{{De~Cock}}{{}}}
-\bibcite{diggle2002analysis}{{10}{2002}{{Diggle et~al.}}{{Diggle, Heagerty, Liang, and Zeger}}}
-\bibcite{farago1993strong}{{11}{1993}{{Farag{\'o} and Lugosi}}{{}}}
-\bibcite{friedman2001greedy}{{12}{2001}{{Friedman}}{{}}}
-\bibcite{houseSalesKingCounty}{{13}{2016}{{harlfoxem}}{{}}}
-\bibcite{harrison1978hedonic}{{14}{1978}{{Harrison and Rubinfeld}}{{}}}
-\@writefile{toc}{\contentsline {paragraph}{Fisher}{19}{section*.31}}
-\bibcite{hastie2009elements}{{15}{2009}{{Hastie et~al.}}{{Hastie, Tibshirani, and Friedman}}}
-\bibcite{hastie2015statistical}{{16}{2015}{{Hastie et~al.}}{{Hastie, Tibshirani, and Wainwright}}}
-\bibcite{pakistanEducation}{{17}{2017}{{Hemani}}{{}}}
-\bibcite{mikolov2013efficient}{{18}{2013}{{Mikolov et~al.}}{{Mikolov, Chen, Corrado, and Dean}}}
-\bibcite{murphy2012machine}{{19}{2012}{{Murphy}}{{}}}
-\bibcite{neyman1948consistent}{{20}{1948}{{Neyman and Scott}}{{}}}
-\bibcite{pennington2014glove}{{21}{2014}{{Pennington et~al.}}{{Pennington, Socher, and Manning}}}
-\bibcite{rahimi2008random}{{22}{2008}{{Rahimi and Recht}}{{}}}
-\bibcite{stone1977consistent}{{23}{1977}{{Stone}}{{}}}
-\bibcite{venables2016codingmatrices}{{24}{2016}{{Venables}}{{}}}
-\bibcite{wang2019lessings}{{25}{2019}{{Wang and Blei}}{{}}}
-\bibcite{wooldridge2010econometric}{{26}{2010}{{Wooldridge}}{{}}}
-\bibcite{zou2006sparse}{{27}{2006}{{Zou et~al.}}{{Zou, Hastie, and Tibshirani}}}
+\bibcite{athey2016approximate}{{3}{2018}{{Athey et~al.}}{{Athey, Imbens, and Wager}}}
+\bibcite{athey2018generalized}{{4}{2019}{{Athey et~al.}}{{Athey, Tibshirani, and Wager}}}
+\bibcite{biau2008consistency}{{5}{2008}{{Biau et~al.}}{{Biau, Devroye, and Lugosi}}}
+\bibcite{bonhomme2015grouped}{{6}{2015}{{Bonhomme and Manresa}}{{}}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Observational Dataset Results for XGBoost.\relax }}{15}{table.caption.14}}
+\newlabel{tab:observational_xgb}{{2}{15}{Observational Dataset Results for XGBoost.\relax }{table.caption.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Application to Doubly Robust Treatment Effect Estimation}{15}{section.5}}
+\newlabel{sec:DR}{{5}{15}{Application to Doubly Robust Treatment Effect Estimation}{section.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{15}{section.6}}
+\bibcite{breiman2001random}{{7}{2001}{{Breiman}}{{}}}
+\bibcite{breiman1984classification}{{8}{1984}{{Breiman et~al.}}{{Breiman, Friedman, Stone, and Olshen}}}
+\bibcite{cerda2018similarity}{{9}{2018}{{Cerda et~al.}}{{Cerda, Varoquaux, and K{\'e}gl}}}
+\bibcite{chen2016xgboost}{{10}{2016}{{Chen and Guestrin}}{{}}}
+\bibcite{chernozhukov2016double}{{11}{2018}{{Chernozhukov et~al.}}{{Chernozhukov, Chetverikov, Demirer, Duflo, Hansen, Newey, and Robins}}}
+\bibcite{de2011ames}{{12}{2011}{{De~Cock}}{{}}}
+\bibcite{diggle2002analysis}{{13}{2002}{{Diggle et~al.}}{{Diggle, Heagerty, Liang, and Zeger}}}
+\bibcite{farago1993strong}{{14}{1993}{{Farag{\'o} and Lugosi}}{{}}}
+\bibcite{friedman2001greedy}{{15}{2001}{{Friedman}}{{}}}
+\bibcite{tmle}{{16}{2012}{{Gruber and {van der Laan}}}{{}}}
+\bibcite{houseSalesKingCounty}{{17}{2016}{{harlfoxem}}{{}}}
+\bibcite{harrison1978hedonic}{{18}{1978}{{Harrison and Rubinfeld}}{{}}}
+\bibcite{hastie2009elements}{{19}{2009}{{Hastie et~al.}}{{Hastie, Tibshirani, and Friedman}}}
+\bibcite{hastie2015statistical}{{20}{2015}{{Hastie et~al.}}{{Hastie, Tibshirani, and Wainwright}}}
+\bibcite{pakistanEducation}{{21}{2017}{{Hemani}}{{}}}
+\bibcite{imbens2015causal}{{22}{2015}{{Imbens and Rubin}}{{}}}
+\bibcite{mikolov2013efficient}{{23}{2013}{{Mikolov et~al.}}{{Mikolov, Chen, Corrado, and Dean}}}
+\bibcite{murphy2012machine}{{24}{2012}{{Murphy}}{{}}}
+\bibcite{neyman1948consistent}{{25}{1948}{{Neyman and Scott}}{{}}}
+\bibcite{pennington2014glove}{{26}{2014}{{Pennington et~al.}}{{Pennington, Socher, and Manning}}}
+\bibcite{CRAN}{{27}{2019}{{R Core Team}}{{}}}
+\bibcite{rahimi2008random}{{28}{2008}{{Rahimi and Recht}}{{}}}
+\bibcite{robins1994estimation}{{29}{1994}{{Robins et~al.}}{{Robins, Rotnitzky, and Zhao}}}
+\bibcite{rosenbaum1983central}{{30}{1983}{{Rosenbaum and Rubin}}{{}}}
+\bibcite{stone1977consistent}{{31}{1977}{{Stone}}{{}}}
+\bibcite{van2011targeted}{{32}{2011}{{van~der Laan and Rose}}{{}}}
+\bibcite{venables2016codingmatrices}{{33}{2016}{{Venables}}{{}}}
+\bibcite{wooldridge2010econometric}{{34}{2010}{{Wooldridge}}{{}}}
+\bibcite{zou2006sparse}{{35}{2006}{{Zou et~al.}}{{Zou, Hastie, and Tibshirani}}}
 \bibstyle{plainnat}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Appendix}{18}{section.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Proofs}{18}{subsection.7.1}}
+\@writefile{toc}{\contentsline {paragraph}{Definitions}{18}{section*.16}}
+\newlabel{eq:matrix_omega}{{24}{18}{Definitions}{equation.7.24}{}}
+\newlabel{eq:matrix_a}{{25}{18}{Definitions}{equation.7.25}{}}
+\newlabel{eq:matrix_psi}{{26}{18}{Definitions}{equation.7.26}{}}
+\@writefile{toc}{\contentsline {paragraph}{Overview}{18}{section*.17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.1}Proof of Lemma \ref  {lemm:repr}}{18}{subsubsection.7.1.1}}
+\newlabel{proof:suff}{{7.1.1}{18}{Proof of Lemma \ref {lemm:repr}}{subsubsection.7.1.1}{}}
+\newlabel{eq:mu2}{{27}{18}{Proof of Lemma \ref {lemm:repr}}{equation.7.27}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.2}Proof of Lemma \ref  {lemm:means}}{19}{subsubsection.7.1.2}}
+\newlabel{proof:means}{{7.1.2}{19}{Proof of Lemma \ref {lemm:means}}{subsubsection.7.1.2}{}}
+\newlabel{eq:scalar_decomposition}{{31}{19}{Proof of Lemma \ref {lemm:means}}{equation.7.31}{}}
+\newlabel{eq:matrix_decomposition}{{32}{19}{Proof of Lemma \ref {lemm:means}}{equation.7.32}{}}
+\newlabel{eq:omega_inverse}{{33}{19}{Proof of Lemma \ref {lemm:means}}{equation.7.33}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.3}Proof of Lemma \ref  {lemm:lowrank}}{19}{subsubsection.7.1.3}}
+\newlabel{proof:lowrank}{{7.1.3}{19}{Proof of Lemma \ref {lemm:lowrank}}{subsubsection.7.1.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.4}Proof of Lemma \ref  {lemm:mnl}}{19}{subsubsection.7.1.4}}
+\newlabel{proof:mnl}{{7.1.4}{19}{Proof of Lemma \ref {lemm:mnl}}{subsubsection.7.1.4}{}}
+\newlabel{eq:mnl_bayes}{{36}{19}{Proof of Lemma \ref {lemm:mnl}}{equation.7.36}{}}
+\newlabel{eq:mnl_logit}{{38}{19}{Proof of Lemma \ref {lemm:mnl}}{equation.7.38}{}}
+\citation{venables2016codingmatrices}
+\citation{murphy2012machine}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Additional Encoding Methods}{20}{subsection.7.2}}
+\newlabel{app:encodings}{{7.2}{20}{Additional Encoding Methods}{subsection.7.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{One-hot or dummy}{20}{section*.18}}
+\@writefile{toc}{\contentsline {paragraph}{Deviation}{20}{section*.20}}
+\@writefile{toc}{\contentsline {paragraph}{Difference}{20}{section*.22}}
+\@writefile{toc}{\contentsline {paragraph}{Helmert}{21}{section*.24}}
+\@writefile{toc}{\contentsline {paragraph}{Repeated Effect}{21}{section*.26}}
+\@writefile{toc}{\contentsline {paragraph}{Permutation}{21}{section*.28}}
+\@writefile{toc}{\contentsline {paragraph}{Multi-Permutation (Multi-Perm)}{21}{section*.30}}
+\citation{hastie2009elements}
+\@writefile{toc}{\contentsline {paragraph}{Fisher}{22}{section*.32}}
