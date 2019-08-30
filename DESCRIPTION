@@ -13,15 +13,15 @@ Description: Collection of simple methods to represent categorical variables for
     expect to make continual improvements to its performance and usability.
     PRs and issue reports are very much welcome.
 Depends:
-    R (>= 3.3.0)
-    glmnet (>= 2.0.16)
-    sparsepca (>= 0.1.12)
+    R (>= 3.3.0),
+    glmnet (>= 2.0.16),
+    sparsepca (>= 0.1.2)
 License: GPL-3
 Suggests:
-  grf
-  dplyr
-  xgboost
-  grf
+    here (>= 0.1),
+    grf (>= 0.10.3),
+    dplyr (>= 0.8.3),
+    xgboost (>= 0.82.1)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
