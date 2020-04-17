@@ -3,11 +3,10 @@
 This package implements the methods for providing sufficient representations of categorical variables mentioned in Johannemann et al. (2019).
 
 
-To install this package, run the following commands in R:
+To install this package, run the following command in R (assuming you have installed `devtools`).
 
 ```r
-library(devtools)
-install_github("grf-labs/sufrep")
+devtools::install_github("grf-labs/sufrep")
 ```
 
 Example usage:
@@ -42,13 +41,13 @@ means_encoder <- make_encoder(X = X, G = G, method = "means")
 train.df <- means_encoder(X = X, G = G)
 print(head(train.df))
 
-#         [,1]    [,2]    [,3]    [,4]      [,5]     [,6]
-# [1,]  0.5855  0.2239 -1.4361  0.1464  0.014645 -0.21528
-# [2,]  0.7095 -1.1562 -0.6293  0.1892  0.177011  0.03227
-# [3,] -0.1093  0.4224  0.2435 -0.3276 -0.009544  0.06307
-# [4,] -0.4535 -1.3248  1.0584  0.1464  0.014645 -0.21528
-# [5,]  0.6059  0.1411  0.8313  0.4915  0.159208  0.17173
-# [6,] -1.8180 -0.5360  0.1052  0.5474 -0.056997 -0.16276
+#           [,1]      [,2]      [,3]     [,4]      [,5]       [,6]
+# [1,]  0.585529  0.223925 -1.436146 0.103683 -0.187225 -0.1909485
+# [2,]  0.709466 -1.156223 -0.629260 0.103683 -0.187225 -0.1909485
+# [3,] -0.109303  0.422419  0.243522 0.427721  0.208770  0.0246111
+# [4,] -0.453497 -1.324755  1.058362 0.195713 -0.207266  0.1346758
+# [5,]  0.605887  0.141084  0.831349 0.195713 -0.207266  0.1346758
+# [6,] -1.817956 -0.536048  0.105212 0.195713 -0.207266  0.1346758
 ```
 
 ### References
